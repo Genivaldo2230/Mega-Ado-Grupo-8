@@ -1,5 +1,6 @@
 package com.senac.sp.log.algorit.grupo_8_mega_ado;
 // chave git :  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
+// chave n:2    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
 //elvi
 import java.util.Scanner;
 

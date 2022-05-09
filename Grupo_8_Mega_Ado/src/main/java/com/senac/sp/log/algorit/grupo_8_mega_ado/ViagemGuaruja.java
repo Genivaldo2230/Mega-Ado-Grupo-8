@@ -31,6 +31,7 @@ public class ViagemGuaruja {
             }
         } else {
             System.out.println("Viagem cancelada!!!");
+
         }
     }
 }

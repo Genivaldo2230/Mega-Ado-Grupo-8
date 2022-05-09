@@ -1,6 +1,5 @@
 package com.senac.sp.log.algorit.grupo_8_mega_ado;
 
-import PI.*;
 import java.util.Scanner;
 
 public class ViagemGuaruja2 {

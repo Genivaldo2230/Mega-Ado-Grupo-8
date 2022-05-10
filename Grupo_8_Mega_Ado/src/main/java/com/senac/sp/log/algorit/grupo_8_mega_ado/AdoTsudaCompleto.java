@@ -25,32 +25,33 @@ public class AdoTsudaCompleto {
 
         switch (MenuOpcao) {
             case 1: {
-                int disponibilidade, orcamento, clima = 0, transporte = 0, condicao = 0;
-                System.out.println("Tenho disponibilidade? Digite 1 para SIM e 2 para NÃO.");
-                disponibilidade = input.nextInt();
+        System.out.println("Viagem para o Guarujá!!!");
+        int orcamento, clima = 0, transporte = 0, condicao = 0;
+        String disponibilidade;
+        System.out.println("Tenho disponibilidade? Digite SIM ou NÃO.");
+        disponibilidade = input.next();
 
-                if (disponibilidade == 1) {
-                    System.out.println("Tenho orçamento para esta viagem?");
-                    orcamento = input.nextInt();
-                    if (orcamento == 1) {
-                        System.out.println("Como estão as condições climaticas? Digite 1 para SIM e 2 para NÂO.");
-                        clima = input.nextInt();
-                        if (clima == 1) {
-                            System.out.println("A viagem será de Carro ou de Onibus? Digite 1 para CARRO PRÒPRIO e 2 para CARRO ALUGADO.");
-                            transporte = input.nextInt();
-                            if (transporte == 1) {
-                                System.out.println("Verificar condições do carro e abastecer");
-                                System.out.println("Boa viagem, aproveite bem o seu final de semana!!!");
-                            } else {
-                                System.out.println("Verificar a disponibilidade e alugar um carro para ir viajar.");
-                                System.out.println("Boa viagem, aproveite bem o seu final de semana!!!");
-
-                            }
-
-                        }
-                    }
-                } else {
-                    System.out.println("Viagem cancelada!!!");
+        if (disponibilidade.equals("SIM")||disponibilidade.equals("sim")||disponibilidade.equals("Sim")) {
+            System.out.println("Tenho orçamento para esta viagem? \nDigite o valor do seu orçamento.");
+            orcamento = input.nextInt();
+            if (orcamento >= 2000) {
+                System.out.println("Como estão as condições climaticas? Digite a temperatura para o final de semana.");
+                clima = input.nextInt();
+            } else {
+            }
+        }
+        if (clima >= 25) {
+            System.out.println("A viagem será de Carro ou de Onibus? Digite 1 para CARRO PRÓPRIO e 2 para CARRO ALUGADO.");
+            transporte = input.nextInt();
+            if (transporte == 1) {
+                System.out.println("Verificar condições do carro e abastecer");
+                System.out.println("Boa viagem, aproveite bem o seu final de semana!!!");
+            } else {
+                System.out.println("Verificar a disponibilidade e alugar um carro para ir viajar.");
+                System.out.println("Boa viagem, aproveite bem o seu final de semana!!!");
+            }
+        } else {
+            System.out.println("Viagem cancelada!!!");
                     break;
                 }
             }

@@ -7,11 +7,12 @@ public class ViagemGuaruja2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Viagem para o Guarujá!!!");
-        int disponibilidade, orcamento, clima = 0, transporte = 0, condicao = 0;
-        System.out.println("Tenho disponibilidade? Digite 1 para SIM e 2 para NÃO.");
-        disponibilidade = sc.nextInt();
+        int orcamento, clima = 0, transporte = 0, condicao = 0;
+        String disponibilidade;
+        System.out.println("Tenho disponibilidade? Digite SIM ou NÃO.");
+        disponibilidade = sc.next();
 
-        if (disponibilidade == 1) {
+        if (disponibilidade.equals("SIM")||disponibilidade.equals("sim")||disponibilidade.equals("Sim")) {
             System.out.println("Tenho orçamento para esta viagem? \nDigite o valor do seu orçamento.");
             orcamento = sc.nextInt();
             if (orcamento >= 2000) {
